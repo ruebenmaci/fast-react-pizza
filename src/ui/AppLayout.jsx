@@ -1,5 +1,5 @@
 import Header from './Header';
-import Loader from './Loader';
+import LoaderIcon from './LoaderIcon';
 import CartOverview from '../features/cart/CartOverview';
 import { Outlet, useNavigation } from 'react-router-dom';
 
@@ -9,7 +9,7 @@ function AppLayout() {
 
   return (
     <div className="grid h-screen grid-rows-[auto_1fr_auto]">
-      {isLoading && <Loader />}
+      {isLoading && <LoaderIcon />}
 
       <Header />
 
